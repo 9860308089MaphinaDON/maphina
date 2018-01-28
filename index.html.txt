@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+</head>
+<body>
+<form name="f1" method="post">
+	<table align="center">
+	<tr>
+	<td colspan="2" align="center">
+		<h1> login system</h1>
+	</td>
+	</tr>
+	<tr>
+		<td>
+			<label>username:</label></td><td><input type="text" name="username" placeholder="User name">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label>password:</label></td><td><input type="password" name="password" placeholder="password">
+		</td>
+	</tr>
+	<tr><td colspan="2" align="center"><input type="button" name="sub" value="submit" onclick="formvalidation()"></td></tr>	
+	</table>
+	<script type="text/javascript">
+		function formvalidation(){
+             var username1=document.f1.username.value;
+		     var password1=document.f1.password.value;
+		    
+		     
+
+		     if(username1!="maphina")
+		{
+		    alert("wrong username");
+			
+		}
+		else if (password1.length<=6) {
+		 	alert("your password must exceed more than 6 digits retype again");
+		 }
+
+		else if (password1!="9860308089")
+		 {
+            alert("wrong password");
+            
+		 }
+		 
+		 else{
+		 	alert("you are succesfully logged in");
+			}
+		}
+
+	</script>
+		 			
+</form>
+
+</body>
+</html>
